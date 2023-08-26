@@ -6,7 +6,9 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-// todo: change the photo in the public folder to a photo of myself
+
+// TODO: change the photo in the public folder to a photo of myself
+// TODO: Change the links in the github and linked links to my personal links !!! not the default, make sure they are not the default website links
 
 const Intro = () => {
   return (

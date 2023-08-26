@@ -2,8 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import airbnbImg from "@/public/airbnb.png";
+import eccommerceImg from "@/public/eccommerce.png";
+import aisaasImg from "@/public/aisaas.png";
 
-// todo: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
+// TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
 
 export const links = [
   {
@@ -61,25 +64,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Airbnb",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    // imageUrl:
+    imageUrl: airbnbImg,
   },
   {
-    title: "rmtDev",
+    title: "Ai-Saas",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    // imageUrl:
+    imageUrl: aisaasImg,
   },
   {
-    title: "Word Analytics",
+    title: "Ecommerce Admin and Store",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    // imageUrl:
+    imageUrl: eccommerceImg,
   },
 ] as const;
 
