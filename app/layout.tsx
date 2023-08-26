@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Background from "@/components/background";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -24,8 +25,10 @@ export default function RootLayout({
         className={`${inter.className} bg-slate-100 text-gray-950 h-[5000px] relative pt-28 sm:pt-36`}
       >
         <Background />
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

@@ -3,12 +3,12 @@
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
 import { clsx } from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState("Home");
-
+  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { setTimeOfLastClick } = useActiveSectionContext();
   return (
     <header className="z-[999] relative flex justify-center">
       <motion.div
@@ -35,7 +35,10 @@ const Header = () => {
                   { "text-gray-950": activeSection === link.name }
                 )}
                 href={link.hash}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setTimeOfLastClick(Date.now);
+                  setActiveSection(link.name);
+                }}
               >
                 {link.name}
                 {link.name === activeSection && (
