@@ -3,8 +3,12 @@
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState } from "react";
+import { clsx } from "clsx";
 
 const Header = () => {
+  const [activeSection, setActiveSection] = useState("Home");
+
   return (
     <header className="z-[999] relative flex justify-center">
       <motion.div
@@ -26,10 +30,21 @@ const Header = () => {
               transition={{ ease: "easeOut", duration: 0.75 }}
             >
               <Link
-                className="flex w-full items-center justfy-center px-2.5 py-3 hover:text-gray-900 transition"
+                className={clsx(
+                  "flex w-full items-center justfy-center px-2.5 py-3 hover:text-gray-900 transition",
+                  { "text-gray-950": activeSection === link.name }
+                )}
                 href={link.hash}
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
+                {link.name === activeSection && (
+                  <motion.span
+                    className="bg-gray-200 rounded-full absolute inset-0 -z-10"
+                    layoutId="activeSelection"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}
