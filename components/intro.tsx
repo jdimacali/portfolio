@@ -7,12 +7,14 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 // TODO: change the photo in the public folder to a photo of myself
 // TODO: Change the links in the github and linked links to my personal links !!! not the default, make sure they are not the default website links
 
 const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] "
@@ -69,13 +71,17 @@ const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale:105 transition-all"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           className="group cursor-pointer bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
-          hover:bg-white-100 active:scale:105 transition-all border border-black/10 shadow"
+          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow"
           // this href leads to the my resume in the public static folder and download is set to true so when it is pressed the pdf is downloaded
           href="/CV.pdf"
           download={true}
@@ -86,7 +92,7 @@ const Intro = () => {
         {/* TODO: add links to my own github and linked in, these will not work if i dont put my link specifically  */}
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-          hover:bg-white-100 active:scale:105 transition-all border border-black/10 shadow"
+          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow"
           href="https://linkedin.com"
           target="_blank"
         >
@@ -94,7 +100,7 @@ const Intro = () => {
         </a>
         <a
           className="bg-white text-gray-700 text-[1.25rem] p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-          hover:bg-white-100 active:scale:105 transition-all border border-black/10 shadow "
+          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow "
           href="https://github.com"
           target="_blank"
         >
