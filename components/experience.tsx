@@ -11,9 +11,9 @@ import { experiencesData } from "@/lib/data";
 import { Fragment } from "react";
 
 const Experience = () => {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.55);
   return (
-    <section ref={ref} id="experience">
+    <section ref={ref} id="experience" className="mb-28 scroll-mt-28 sm:mb-40">
       <SectionHeading> My Experience </SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
