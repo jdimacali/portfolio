@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Background from "@/components/background";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import Toaster from "react-hot-toast";
+import ToasterProvider from "@/components/toaster-provider";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -35,6 +37,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header />
           {children}
+          <ToasterProvider />
         </ActiveSectionContextProvider>
       </body>
     </html>
