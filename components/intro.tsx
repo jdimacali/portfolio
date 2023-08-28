@@ -93,7 +93,7 @@ const Intro = () => {
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white"
-          href="https://linkedin.com"
+          href="www.linkedin.com/in/matthew-dimacali-070075259"
           target="_blank"
         >
           <BsLinkedin />
@@ -101,7 +101,7 @@ const Intro = () => {
         <a
           className="bg-white text-gray-700 text-[1.25rem] p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white"
-          href="https://github.com"
+          href="https://github.com/LilahDim"
           target="_blank"
         >
           <FaGithubSquare />
