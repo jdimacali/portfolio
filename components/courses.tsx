@@ -7,18 +7,18 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { coursesData } from "@/lib/data";
 import { Fragment } from "react";
 import { useThemeContext } from "@/context/theme-context";
 
-const Experience = () => {
-  const { ref } = useSectionInView("Experience", 0.55);
+const Courses = () => {
+  const { ref } = useSectionInView("Courses", 0.55);
   const { theme } = useThemeContext();
   return (
-    <section ref={ref} id="experience" className="mb-28 scroll-mt-28 sm:mb-40">
-      <SectionHeading> My Experience </SectionHeading>
+    <section ref={ref} id="courses" className="mb-28 scroll-mt-28 sm:mb-40">
+      <SectionHeading> Courses </SectionHeading>
       <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+        {coursesData.map((item, index) => (
           <Fragment key={index}>
             <VerticalTimelineElement
               icon={item.icon}
@@ -55,4 +55,4 @@ const Experience = () => {
     </section>
   );
 };
-export default Experience;
+export default Courses;

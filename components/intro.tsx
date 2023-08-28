@@ -29,11 +29,11 @@ const Intro = () => {
             transition={{ type: "spring", duration: 0.325 }}
           >
             <Image
-              src="/olawale-munna-_ObjhzjnMmc-unsplash.jpg"
+              src="/James.jpg"
               alt="James Dimacali Portrait"
-              width="192"
-              height="192"
-              quality="95"
+              width="200"
+              height="200"
+              quality="100"
               priority={true}
               className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
