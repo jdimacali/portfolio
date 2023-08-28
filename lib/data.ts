@@ -38,17 +38,17 @@ export const links = [
 export const coursesData = [
   {
     title: "Harvard CS50",
-    location: "David J. Malan",
+    teacher: "David J. Malan",
     description: `Undertaking the prestigious Harvard CS50 course was a pivotal moment in my self-taught developer journey. This comprehensive 
       introduction to computer science provided me with a strong foundation in programming 
-      languages, algorithms, and problem-solving techniques. The rigorous curriculum challenged me to think critically and approach`,
+      languages, algorithms, and problem-solving techniques.`,
     icon: React.createElement(MdComputer),
     date: "2022",
   },
   {
     title: "The Complete 2023 Web Development Bootcamp",
-    location: "Dr.Angela Yu",
-    description: `Completing the 2023 Web Development Bootcamp was a transformative experience. This intensive course covered the latest tools and technologies 
+    teacher: "Dr.Angela Yu",
+    description: `Completing the 2023 Web Development Bootcamp was when I knew I wanted to be a fullstack developer. This intensive course covered the latest tools and technologies 
       in web development, equipping me with the skills to create dynamic and responsive websites. From HTML5 and CSS3 to JavaScript frameworks, 
       I gained hands-on experience in crafting immersive web experiences that prioritize user engagement and modern design principles.`,
     icon: React.createElement(CgWebsite),
@@ -56,10 +56,10 @@ export const coursesData = [
   },
   {
     title: "Meta Frontend-End Developer Professional Certificate",
-    location: "Meta",
-    description: `Earning the Meta Frontend Developer Certificate validated my expertise in creating captivating user interfaces and seamless user experiences. 
-    This certificate program delved into advanced frontend technologies, 
-    including React, and responsive design, enabling me to build interactive and visually appealing applications that adapt flawlessly across devices`,
+    teacher: "Meta",
+    description: `The Meta Frontend Developer Certificate built upon and upgraded my experience in creating captivating user interfaces and seamless user experiences. 
+    This certificate program delved into advanced React technologies and techniques, 
+    including hooks, state, and responsive design, enabling me to build interactive and visually appealing applications that adapt flawlessly across devices`,
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
