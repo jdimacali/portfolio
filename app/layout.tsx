@@ -6,6 +6,9 @@ import Background from "@/components/background";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Toaster from "react-hot-toast";
 import ToasterProvider from "@/components/toaster-provider";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -30,14 +33,18 @@ export default function RootLayout({
       </head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
-        className={`${inter.className} bg-slate-100 text-gray-950 relative pt-28 sm:pt-36`}
+        className={`${inter.className} bg-slate-100 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50`}
         suppressHydrationWarning={true}
       >
         <Background />
         <ActiveSectionContextProvider>
-          <Header />
-          {children}
-          <ToasterProvider />
+          <ThemeContextProvider>
+            <Header />
+            {children}
+            <Footer />
+            <ToasterProvider />
+            <ThemeSwitch />
+          </ThemeContextProvider>
         </ActiveSectionContextProvider>
       </body>
     </html>

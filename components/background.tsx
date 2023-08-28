@@ -6,14 +6,15 @@ const Background = () => {
   return (
     <>
       <motion.div
-        className="bg-amber-50 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="bg-amber-100 absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[13rem] sm:w-[68.75rem] dark:bg-rose-300"
+        animate={{ rotate: -360, scale: 1 }}
+        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
       />
       <motion.div
-        className="bg-teal-100 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="bg-cyan-200 absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[9rem] dark:blur-[16rem] sm:w-[68.75rem] md:left-[-33rem] 
+        lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]  dark:bg-indigo-600"
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
       />
     </>
   );
