@@ -61,7 +61,7 @@ export const coursesData = [
     This certificate program delved into advanced frontend technologies, 
     including React, and responsive design, enabling me to build interactive and visually appealing applications that adapt flawlessly across devices`,
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
