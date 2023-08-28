@@ -34,7 +34,7 @@ const Header = () => {
                 className={clsx(
                   "flex w-full items-center justfy-center px-2.5 py-3 hover:text-gray-900 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "text-gray-950 dark:text-gray-100":
+                    "text-gray-950 dark:text-white/90":
                       activeSection === link.name,
                   }
                 )}
