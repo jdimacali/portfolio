@@ -37,6 +37,8 @@ function getReactNativeUrl() {
   }
 }
 
+const reactNativeUrl = getReactNativeUrl();
+
 export const links = [
   {
     name: "Home",
@@ -140,7 +142,7 @@ export const projectsData = [
       "Discover your dream job with our React Native job board app, offering a seamless mobile experience akin to Indeed's functionality.",
     tags: ["React-Native", "Expo", "Typescript", "Tailwind", "Rapid API"],
     imageUrl: eccommerceImg,
-    projectUrl: getReactNativeUrl(),
+    projectUrl: reactNativeUrl,
   },
 ] as const;
 
