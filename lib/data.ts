@@ -8,6 +8,28 @@ import aisaasImg from "@/public/aisaas.png";
 
 // TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
 
+function getPlatform() {
+  var platform = ["Win32", "Android", "iOS"];
+
+  for (var i = 0; i < platform.length; i++) {
+    if (navigator.platform.indexOf(platform[i]) > -1) {
+      return platform[i];
+    }
+  }
+}
+
+const platform = <"Win32" | "Android" | "iOS">getPlatform();
+
+function getReactNativeUrl() {
+  if (platform === "Android") {
+    return "exp://u.expo.dev/update/6695134a-43d2-4307-8f6b-aa9689dc12cd";
+  }
+
+  if (platform === "iOS") {
+    return "exp://u.expo.dev/update/84b6878b-d878-4fd6-b3e4-45856be0ada0";
+  }
+}
+
 export const links = [
   {
     name: "Home",
@@ -104,6 +126,14 @@ export const projectsData = [
     tags: ["React", "Next.js", "MySQL", "Tailwind", "REST API", "Clerk"],
     imageUrl: eccommerceImg,
     projectUrl: "",
+  },
+  {
+    title: "Mobile Job Board App",
+    description:
+      "Discover your dream job with our React Native job board app, offering a seamless mobile experience akin to Indeed's functionality.",
+    tags: ["React-Native", "Expo", "Typescript", "Tailwind", "Rapid API"],
+    imageUrl: eccommerceImg,
+    projectUrl: getReactNativeUrl(),
   },
 ] as const;
 
