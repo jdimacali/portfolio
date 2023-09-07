@@ -13,7 +13,7 @@ const Projects = () => {
     <section id="projects" className="scroll-mt-28 mb-28" ref={ref}>
       <SectionHeading> My Projects</SectionHeading>
       <div>
-        {projectsData.map((project, index) => (
+        {projectsData.map((project: any, index) => (
           <React.Fragment key={index}>
             <Link href={project.projectUrl} target="blank">
               <ProjectCard {...project} />
