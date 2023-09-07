@@ -139,7 +139,7 @@ export const projectsData = [
   {
     title: "Mobile Job Board App",
     description:
-      "Discover your dream job with our React Native job board app, offering a seamless mobile experience akin to Indeed's functionality.",
+      "React Native Job Board app, offering a seamless mobile experience using expo router and typescript.",
     tags: ["React-Native", "Expo", "Typescript", "Tailwind", "Rapid API"],
     imageUrl: eccommerceImg,
     projectUrl: reactNativeUrl,
