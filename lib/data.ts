@@ -6,7 +6,7 @@ import airbnbImg from "@/public/airbnb.png";
 import eccommerceImg from "@/public/eccommerce.png";
 import aisaasImg from "@/public/aisaas.png";
 import { getMobileUrl } from "./utils";
-
+import reactNativeImg from "@/public/reactNative.png";
 // TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
 
 export const links = [
@@ -82,6 +82,7 @@ export const projectsData = [
     ],
     imageUrl: airbnbImg,
     projectUrl: "https://rental-home-app-cyan.vercel.app/",
+    githubUrl: "https://github.com/LilahDim/final-airbnb-clone",
   },
   {
     title: "Ai-Saas",
@@ -97,6 +98,7 @@ export const projectsData = [
     ],
     imageUrl: aisaasImg,
     projectUrl: "",
+    githubUrl: "https://github.com/LilahDim/ai-saas",
   },
   {
     title: "Ecommerce Admin and Store",
@@ -104,15 +106,17 @@ export const projectsData = [
       "An eccommerce store with seperate admin console  and a sleek modern frontend with cart and stripe functionality",
     tags: ["React", "Next.js", "MySQL", "Tailwind", "REST API", "Clerk"],
     imageUrl: eccommerceImg,
-    projectUrl: "",
+    projectUrl: "https://github.com/LilahDim/e-commerce-admin",
+    githubUrl: "https://github.com/LilahDim/e-commerce-admin",
   },
   {
     title: "Mobile Job Board App",
     description:
-      "React Native Job Board app, offering a seamless mobile experience using expo router and typescript.",
+      "React Native Job Board, offering a seamless mobile experience using expo router and typescript",
     tags: ["React-Native", "Expo", "Typescript", "Tailwind", "Rapid-API"],
-    imageUrl: eccommerceImg,
+    imageUrl: reactNativeImg,
     projectUrl: getMobileUrl(),
+    githubUrl: "https://github.com/LilahDim/react-native-jobs",
   },
 ] as const;
 
@@ -133,6 +137,7 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Flask",
+  "Django",
   "Git",
   "Docker",
   "AWS",
