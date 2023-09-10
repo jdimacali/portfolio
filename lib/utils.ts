@@ -30,7 +30,7 @@ export function getMobileUrl() {
   let platform;
 
   for (var i = 0; i < platforms.length; i++) {
-    if (navigator.userAgent.indexOf(platforms[i]) > -1) {
+    if (global.navigator.platform.indexOf(platforms[i]) > -1) {
       platform = platforms[i];
     }
   }
