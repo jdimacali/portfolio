@@ -1,3 +1,10 @@
+if (typeof navigator !== "undefined") {
+  const userAgent = navigator.userAgent;
+  console.log(userAgent);
+} else {
+  console.error("The navigator object is not available.");
+}
+
 export const validateString = (
   value: unknown,
   maxLength: number
@@ -26,14 +33,8 @@ export const getErrorMessage = (error: unknown): string => {
 };
 
 export function getMobileUrl() {
-  var platforms = ["Win32", "Android", "iOS"];
-  let platform;
-
-  for (var i = 0; i < platforms.length; i++) {
-    if (global.navigator.platform.indexOf(platforms[i]) > -1) {
-      platform = platforms[i];
-    }
-  }
+  let platform = navigator.userAgent;
+  console.log(platform);
 
   switch (platform) {
     case "Android":
