@@ -5,7 +5,7 @@ import { FaReact } from "react-icons/fa";
 import airbnbImg from "@/public/airbnb.png";
 import eccommerceImg from "@/public/eccommerce.png";
 import aisaasImg from "@/public/aisaas.png";
-import { getMobileUrl } from "./utils";
+//import { getMobileUrl } from "./utils";
 import reactNativeImg from "@/public/reactNative.png";
 // TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
 
@@ -115,7 +115,7 @@ export const projectsData = [
       "React Native Job Board, offering a seamless mobile experience using expo router and typescript",
     tags: ["React-Native", "Expo", "Typescript", "Tailwind", "Rapid-API"],
     imageUrl: reactNativeImg,
-    projectUrl: getMobileUrl(),
+    projectUrl: "exp://u.expo.dev/update/84b6878b-d878-4fd6-b3e4-45856be0ada0",
     githubUrl: "https://github.com/LilahDim/react-native-jobs",
   },
 ] as const;

@@ -39,9 +39,7 @@ export default function RootLayout({
         <Background />
         <ActiveSectionContextProvider>
           <ThemeContextProvider>
-            <Header />
             {children}
-            <Footer />
             <ToasterProvider />
             <ThemeSwitch />
           </ThemeContextProvider>
