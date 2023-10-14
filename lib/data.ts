@@ -5,8 +5,7 @@ import { FaReact } from "react-icons/fa";
 import airbnbImg from "@/public/airbnb.png";
 import eccommerceImg from "@/public/eccommerce.png";
 import aisaasImg from "@/public/aisaas.png";
-//import { getMobileUrl } from "./utils";
-import reactNativeImg from "@/public/reactNative.png";
+import lmsPlatformImg from "@/public/lms-platform.png";
 // TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
 
 export const links = [
@@ -84,39 +83,39 @@ export const projectsData = [
     projectUrl: "https://rental-home-app-cyan.vercel.app/",
     githubUrl: "https://github.com/LilahDim/final-airbnb-clone",
   },
+  // {
+  //   title: "Ai-Saas",
+  //   description:
+  //     "Ai website that uses apis from popular large language models and creates dynamic content according to user input",
+  //   tags: [
+  //     "React",
+  //     "TypeScript",
+  //     "Next.js",
+  //     "Tailwind",
+  //     "Chat-GPT API",
+  //     "Clerk",
+  //   ],
+  //   imageUrl: aisaasImg,
+  //   projectUrl: "",
+  //   githubUrl: "https://github.com/LilahDim/ai-saas",
+  // },
   {
-    title: "Ai-Saas",
+    title: "Learning Management System",
     description:
-      "Ai website that uses apis from popular large language models and creates dynamic content according to user input",
-    tags: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Tailwind",
-      "Chat-GPT API",
-      "Clerk",
-    ],
-    imageUrl: aisaasImg,
-    projectUrl: "",
-    githubUrl: "https://github.com/LilahDim/ai-saas",
+      "learning management system akin to Udemy, offering personalized course uploads and payment processing.",
+    tags: ["React", "Next.js", "MySQL", "Tailwind", "Clerk", "Stripe"],
+    imageUrl: lmsPlatformImg,
+    projectUrl: "https://lms-platform-plum.vercel.app/",
+    githubUrl: "https://github.com/LilahDim/lms_platform",
   },
   {
     title: "Ecommerce Admin and Store",
     description:
-      "An eccommerce store with seperate admin console  and a sleek modern frontend with cart and stripe functionality",
+      "An eccommerce store with seperate admin console and a sleek modern frontend with cart and stripe functionality",
     tags: ["React", "Next.js", "MySQL", "Tailwind", "REST API", "Clerk"],
     imageUrl: eccommerceImg,
     projectUrl: "https://github.com/LilahDim/e-commerce-admin",
     githubUrl: "https://github.com/LilahDim/e-commerce-admin",
-  },
-  {
-    title: "Mobile Job Board App",
-    description:
-      "React Native Job Board, offering a seamless mobile experience using expo router and typescript",
-    tags: ["React-Native", "Expo", "Typescript", "Tailwind", "Rapid-API"],
-    imageUrl: reactNativeImg,
-    projectUrl: "exp://u.expo.dev/update/84b6878b-d878-4fd6-b3e4-45856be0ada0",
-    githubUrl: "https://github.com/LilahDim/react-native-jobs",
   },
 ] as const;
 
@@ -141,8 +140,6 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Flask",
-  "Django",
   "Git",
   "Docker",
-  "AWS",
 ] as const;

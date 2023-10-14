@@ -2,7 +2,7 @@ import { About } from "@/components/about";
 import Contact from "@/components/contact";
 import Courses from "@/components/courses";
 import Intro from "@/components/intro";
-import Projects from "@/components/projects";
+import Projects from "@/components/project/projects";
 import { SectionDivider } from "@/components/section-divider";
 import Skills from "@/components/skills";
 

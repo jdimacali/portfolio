@@ -6,7 +6,6 @@ import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
 import { useRef } from "react";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 
 // Because the data is as const we need to give the the typeof the imported dated with an index of number for any number, then we set it as props and destructure the data given
 type ProjectProps = (typeof projectsData)[number];
@@ -39,12 +38,12 @@ const ProjectCard = ({
       }}
     >
       <section
-        className="bg-gray-100 max-w-[42rem] borderBlack rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition sm:group-even:pl-8
+        className="bg-gray-100 max-w-[44rem] borderBlack rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem] max-h-[28rem] hover:bg-gray-200 transition sm:group-even:pl-8
        dark:bg-white/20 dark:hover:bg-white/30 dark:text-white"
       >
         <Link href={projectUrl} target="blank">
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
-            <h3 className="text-2xl font-semibold">{title}</h3>
+            <h3 className="text-2xl font-semibold line-clamp-2">{title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/80">
               {description}
             </p>
@@ -74,7 +73,6 @@ const ProjectCard = ({
                 href={`http://localhost:3000/projects/${title}`}
               >
                 Learn more
-                <BsArrowRight />
               </Link>
             </div>
           </div>
