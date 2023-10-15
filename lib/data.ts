@@ -83,7 +83,7 @@ export const projectsData = [
     imageUrl: airbnbImg,
     projectUrl: "https://rental-home-app-cyan.vercel.app/",
     githubUrl: "https://github.com/LilahDim/final-airbnb-clone",
-    photos: [""],
+    photos: "",
   },
   // {
   //   title: "Ai-Saas",
@@ -109,7 +109,7 @@ export const projectsData = [
     imageUrl: lmsPlatformImg,
     projectUrl: "https://lms-platform-plum.vercel.app/",
     githubUrl: "https://github.com/LilahDim/lms_platform",
-    photos: [lmsPlatformEditImg],
+    photos: lmsPlatformEditImg,
   },
   {
     title: "Ecommerce Admin and Store",
@@ -119,7 +119,7 @@ export const projectsData = [
     imageUrl: eccommerceImg,
     projectUrl: "https://github.com/LilahDim/e-commerce-admin",
     githubUrl: "https://github.com/LilahDim/e-commerce-admin",
-    photos: [""],
+    photos: "",
   },
 ] as const;
 

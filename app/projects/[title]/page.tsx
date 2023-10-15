@@ -17,21 +17,16 @@ const ProjectPage = async ({ params }: { params: { title: string } }) => {
     );
   }
 
-   const openInNewTab = (url: string) => {
-     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-     if (newWindow) newWindow.opener = null;
-   };
-
   return (
     <div>
       <SectionHeading> {project?.title} </SectionHeading>
       <div className="mx-24 flex ">
         <Image
           alt="Project image"
-          src={project.photos[0]}
+          src={project.photos}
           width={1240}
           height={900}
-          className="rounded-lg shadow-sm border object-contain"
+          className="rounded-lg shadow-2xl border object-contain"
         />
         <div>
           <p className="mt-6 text-gray-700 dark:text-gray-300 ml-20 text-center font-semibold">
