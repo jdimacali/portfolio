@@ -42,46 +42,47 @@ const ProjectCard = ({
        dark:bg-white/20 dark:hover:bg-white/30 dark:text-white"
       >
         <Link href={projectUrl} target="blank">
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
-            <h3 className="text-2xl font-semibold line-clamp-2">{title}</h3>
-            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/80">
-              {description}
-            </p>
-            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
-                <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full 
+          <object>
+            <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col gap-y-3 h-full sm:group-even:ml-[18rem] ">
+              <h3 className="text-2xl font-semibold line-clamp-2">{title}</h3>
+              <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/80">
+                {description}
+              </p>
+              <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                {tags.map((tag, index) => (
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full 
                 dark:text-white/80"
-                  key={index}
+                    key={index}
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex justify-between gap-2">
+                <Link
+                  className="cursor-pointer bg-white text-black px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
+          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white mt-5 whitespace-nowrap"
+                  target="blank"
+                  href={githubUrl}
                 >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-            <div className="flex justify-between gap-2">
-              <a
-                className="cursor-pointer bg-white text-black px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
+                  See code <FaGithubSquare />
+                </Link>
+                <Link
+                  className="cursor-pointer bg-white text-black px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white mt-5 whitespace-nowrap"
-                target="blank"
-                href={githubUrl}
-              >
-                See code <FaGithubSquare />
-              </a>
-              <Link
-                className="cursor-pointer bg-white text-black px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
-          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white mt-5 whitespace-nowrap"
-                href={`http://localhost:3000/projects/${title}`}
-              >
-                Learn more
-              </Link>
+                  href={`http://localhost:3000/projects/${title}`}
+                >
+                  Learn more
+                </Link>
+              </div>
             </div>
-          </div>
 
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+            <Image
+              src={imageUrl}
+              alt="Project I worked on"
+              quality={95}
+              className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
@@ -93,7 +94,8 @@ const ProjectCard = ({
         group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40 "
-          />
+            />
+          </object>
         </Link>
       </section>
     </motion.div>

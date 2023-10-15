@@ -4,8 +4,9 @@ import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import airbnbImg from "@/public/airbnb.png";
 import eccommerceImg from "@/public/eccommerce.png";
-import aisaasImg from "@/public/aisaas.png";
-import lmsPlatformImg from "@/public/lms-platform.png";
+// import aisaasImg from "@/public/aisaas.png";
+import lmsPlatformImg from "@/public/lms/lms-platform.png";
+import lmsPlatformEditImg from "@/public/lms/lms-platform-edit.png";
 // TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
 
 export const links = [
@@ -82,6 +83,7 @@ export const projectsData = [
     imageUrl: airbnbImg,
     projectUrl: "https://rental-home-app-cyan.vercel.app/",
     githubUrl: "https://github.com/LilahDim/final-airbnb-clone",
+    photos: [""],
   },
   // {
   //   title: "Ai-Saas",
@@ -107,6 +109,7 @@ export const projectsData = [
     imageUrl: lmsPlatformImg,
     projectUrl: "https://lms-platform-plum.vercel.app/",
     githubUrl: "https://github.com/LilahDim/lms_platform",
+    photos: [lmsPlatformEditImg],
   },
   {
     title: "Ecommerce Admin and Store",
@@ -116,6 +119,7 @@ export const projectsData = [
     imageUrl: eccommerceImg,
     projectUrl: "https://github.com/LilahDim/e-commerce-admin",
     githubUrl: "https://github.com/LilahDim/e-commerce-admin",
+    photos: [""],
   },
 ] as const;
 

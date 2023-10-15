@@ -33,7 +33,7 @@ export default function RootLayout({
       </head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
-        className={`${inter.className} bg-slate-100 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50`}
+        className={`${inter.className} bg-slate-100 text-gray-950 relative dark:bg-gray-950 dark:text-gray-50`}
         suppressHydrationWarning={true}
       >
         <Background />
