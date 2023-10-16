@@ -71,7 +71,7 @@ const ProjectCard = ({
                 <Link
                   className="cursor-pointer bg-white text-black px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white mt-5 whitespace-nowrap"
-                  href={`http://localhost:3000/projects/${title}`}
+                  href={`/projects/${title}`}
                 >
                   Learn more
                 </Link>
