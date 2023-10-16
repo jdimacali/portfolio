@@ -12,7 +12,7 @@ type ProjectProps = (typeof projectsData)[number];
 
 const ProjectCard = ({
   title,
-  description,
+  descriptions,
   tags,
   imageUrl,
   githubUrl,
@@ -46,7 +46,7 @@ const ProjectCard = ({
             <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col gap-y-3 h-full sm:group-even:ml-[18rem] ">
               <h3 className="text-2xl font-semibold line-clamp-2">{title}</h3>
               <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/80">
-                {description}
+                {descriptions[0]}
               </p>
               <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                 {tags.map((tag, index) => (

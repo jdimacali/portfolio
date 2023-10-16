@@ -101,7 +101,7 @@ const Intro = () => {
         <a
           className="bg-white text-gray-700 text-[1.25rem] p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white"
-          href="https://github.com/LilahDim"
+          href="https://github.com/jdimacali"
           target="_blank"
         >
           <FaGithubSquare />

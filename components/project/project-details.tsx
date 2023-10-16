@@ -6,7 +6,7 @@ type ProjectProps = (typeof projectsData)[number];
 
 const ProjectDetails = ({
   title,
-  description,
+  descriptions,
   tags,
   imageUrl,
   githubUrl,

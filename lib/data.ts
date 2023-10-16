@@ -2,12 +2,26 @@ import React from "react";
 import { MdComputer } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import airbnbImg from "@/public/airbnb.png";
-import eccommerceImg from "@/public/eccommerce.png";
-// import aisaasImg from "@/public/aisaas.png";
+
+import airbnbImg from "@/public/airbnb/airbnb.png";
+import airbnbFullImg from "@/public/airbnb/airbnb-full.png";
+import airbnbImg1 from "@/public/airbnb/airbnb1.png";
+import airbnbImg2 from "@/public/airbnb/airbnb2.png";
+
 import lmsPlatformImg from "@/public/lms/lms-platform.png";
 import lmsPlatformEditImg from "@/public/lms/lms-platform-edit.png";
-// TODO: You need to insert the images of your projects in the public folder and import them here to insert them in the static ProjectsData
+import lmsPlatformImg1 from "@/public/lms/lms-platform1.png";
+import lmsPlatformImg2 from "@/public/lms/lms-platform2.png";
+
+import eccommerceAdminImg from "@/public/e-admin/eccommerce-admin.png";
+import eccommerceAdminFullImg from "@/public/e-admin/eccommerce-admin-full.png";
+import eccommerceAdminImg1 from "@/public/e-admin/eccommerce1.png";
+import eccommerceAdminImg2 from "@/public/e-admin/eccommerce2.png";
+
+import eccommerceStoreImg from "@/public/e-store/eccommerce-store.png";
+import eccommerceStoreFullImg from "@/public/e-store/eccommerce-store-full.png";
+import eccommerceStoreImg1 from "@/public/e-store/eccommerce1.png";
+import eccommerceStoreImg2 from "@/public/e-store/eccommerce2.png";
 
 export const links = [
   {
@@ -69,8 +83,12 @@ export const coursesData = [
 export const projectsData = [
   {
     title: "Airbnb",
-    description:
+    descriptions: [
       "Airbnb clone that has its best features like property listings, booking experiences, and user favorites",
+      `The listing creation feature is meticulously designed to provide users with a hassle-free and intuitive experience. Implementing CRUD operations, the application allows users to effortlessly create, update, and manage their listings. 
+      Robust authentication mechanisms ensure secure access and data handling, guaranteeing the privacy and integrity of user-generated content.`,
+      "The reservation and rental process is meticulously crafted to provide users with a hassle-free and secure booking experience. Advanced date management systems enable users to select available dates for their desired accommodation, while sophisticated authentication mechanisms ensure secure access and data handling, safeguarding the integrity of the booking process.",
+    ],
     tags: [
       "Next.js",
       "MongoDB",
@@ -82,44 +100,49 @@ export const projectsData = [
     ],
     imageUrl: airbnbImg,
     projectUrl: "https://rental-home-app-cyan.vercel.app/",
-    githubUrl: "https://github.com/LilahDim/final-airbnb-clone",
-    photos: "",
+    githubUrl: "https://github.com/jdimacali/final-airbnb-clone",
+    photos: [airbnbFullImg, airbnbImg1, airbnbImg2],
   },
-  // {
-  //   title: "Ai-Saas",
-  //   description:
-  //     "Ai website that uses apis from popular large language models and creates dynamic content according to user input",
-  //   tags: [
-  //     "React",
-  //     "TypeScript",
-  //     "Next.js",
-  //     "Tailwind",
-  //     "Chat-GPT API",
-  //     "Clerk",
-  //   ],
-  //   imageUrl: aisaasImg,
-  //   projectUrl: "",
-  //   githubUrl: "https://github.com/LilahDim/ai-saas",
-  // },
   {
     title: "Learning Management System",
-    description:
+    descriptions: [
       "learning management system akin to Udemy, offering personalized course uploads and payment processing.",
+      "The LMS platform's course creation feature is designed to simplify the course development process for educators. Through the application of RESTful API design principles, the LMS platform enables seamless communication between the frontend and backend components, facilitating efficient data transfer and integration of course content into the platform's database.",
+      "The course viewing feature within the LMS platform is meticulously designed to provide users with a comprehensive and secure learning experience. Locked features and free chapters are strategically implemented, encouraging users to explore course content and incentivizing them to unlock the full course through secure payment transactions.",
+    ],
     tags: ["React", "Next.js", "MySQL", "Tailwind", "Clerk", "Stripe"],
     imageUrl: lmsPlatformImg,
     projectUrl: "https://lms-platform-plum.vercel.app/",
-    githubUrl: "https://github.com/LilahDim/lms_platform",
-    photos: lmsPlatformEditImg,
+    githubUrl: "https://github.com/jdimacali/lms_platform",
+    photos: [lmsPlatformImg1, lmsPlatformEditImg, lmsPlatformImg2],
   },
   {
-    title: "Ecommerce Admin and Store",
-    description:
-      "An eccommerce store with seperate admin console and a sleek modern frontend with cart and stripe functionality",
+    title: "E-commerce Admin Console",
+    descriptions: [
+      "An advanced e-commerce admin console integrating RESTful API endpoints for efficient client data management.",
+      "The product data editing feature within the E-Commerce Admin Console is meticulously designed to provide administrators with a hassle-free and secure data management experience.The application's robust backend architecture ensures efficient data transfer and integration between the E-Commerce Admin Console and client storefronts, allowing for seamless product data synchronization across multiple platforms.  ",
+      " The E-Commerce Admin Console's server architecture is implemented with a focus on scalability, security, and efficient data management. The well-structured RESTful API endpoints facilitate seamless communication between the server and client applications, enabling a cohesive and user-friendly data management experience.",
+    ],
+
     tags: ["React", "Next.js", "MySQL", "Tailwind", "REST API", "Clerk"],
-    imageUrl: eccommerceImg,
-    projectUrl: "https://github.com/LilahDim/e-commerce-admin",
-    githubUrl: "https://github.com/LilahDim/e-commerce-admin",
-    photos: "",
+    imageUrl: eccommerceAdminImg,
+    projectUrl: "https://e-commerce-admin-ank65i4gi-lilahdim.vercel.app/",
+    githubUrl: "https://github.com/jdimacali/e-commerce-admin",
+    photos: [eccommerceAdminFullImg, eccommerceAdminImg1, eccommerceAdminImg2],
+  },
+  {
+    title: "E-commerce Client Store",
+    descriptions: [
+      "An e-commerce platform with a sleek, modern design, shopping cart integration, and Stripe functionality.",
+      "The E-Commerce Store Client's cart and checkout features are meticulously designed to provide users with a seamless and secure shopping experience. The secure Stripe integration further enhances the platform's credibility and trustworthiness, allowing users to complete transactions smoothly and securely, fostering a positive and seamless shopping experience.",
+      `The store display feature within the E-Commerce Storefront is meticulously designed to provide users with a 
+      seamless and visually engaging shopping experience. By leveraging the capabilities of the custom backend API, the platform ensures that product information is accurately displayed and updated in real-time, providing customers with the latest store details.`,
+    ],
+    tags: ["React", "Next.js", "Tailwind", "REST API", "Stripe"],
+    imageUrl: eccommerceStoreImg,
+    projectUrl: "https://ecommerce-store-lovat-xi.vercel.app/",
+    githubUrl: "https://github.com/jdimacali/e-commerce-admin",
+    photos: [eccommerceStoreFullImg, eccommerceStoreImg1, eccommerceStoreImg2],
   },
 ] as const;
 
