@@ -1,14 +1,11 @@
 "use client";
 
 import { useTransform, motion, useScroll } from "framer-motion";
-import { projectsData } from "@/lib/data";
 import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
 import { useRef } from "react";
 import Link from "next/link";
-
-// Because the data is as const we need to give the the typeof the imported dated with an index of number for any number, then we set it as props and destructure the data given
-type ProjectProps = (typeof projectsData)[number];
+import { ProjectProps } from "@/types";
 
 const ProjectCard = ({
   title,
@@ -69,8 +66,8 @@ const ProjectCard = ({
                   See code <FaGithubSquare />
                 </Link>
                 <Link
-                  className="cursor-pointer bg-white text-black px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
-          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white mt-5 whitespace-nowrap"
+                  className="cursor-pointer bg-gray-900 text-white px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
+          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow hover:bg-gray-950 mt-5 whitespace-nowrap"
                   href={`/projects/${title}`}
                 >
                   Learn more
