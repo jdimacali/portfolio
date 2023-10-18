@@ -42,9 +42,9 @@ const ProjectPage = () => {
     <>
       <motion.div
         className="flex flex-col items-center"
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 100, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.55 }}
+        transition={{ ease: "easeInOut", duration: 1.05 }}
       >
         <h2 className="text-3xl font-medium capitalize mb-8 text-center">
           {project.title}
