@@ -12,12 +12,9 @@ const Intro = ({ project }: IntroProps) => {
   return (
     <motion.article
       className="mx-24 sm:flex flex-col items-center justify-center"
-      initial={{ y: -100, opacity: 0 }}
+      initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 100 }}
-      transition={{
-        duration: 0.85,
-        ease: "easeInOut",
-      }}
+      transition={{ ease: "easeOut", duration: 0.75, delay: 0.15 }}
       whileInView="animate"
       viewport={{
         once: true,

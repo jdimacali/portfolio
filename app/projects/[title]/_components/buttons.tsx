@@ -20,8 +20,8 @@ const Buttons = ({ project }: ButtonsProps) => {
         See code repository <FaGithubSquare />
       </Link>
       <Link
-        className="cursor-pointer bg-gray-800 text-white sm:px-20 px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
-          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow  dark:text-white whitespace-nowrap hover:bg-gray-900"
+        className="cursor-pointer bg-gray-900 text-white sm:px-20 px-5 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
+          hover:bg-white-100 active:scale:105 transition-all borderBlack shadow  dark:text-white whitespace-nowrap hover:bg-gray-950"
         href={project.projectUrl}
         target="blank"
       >
