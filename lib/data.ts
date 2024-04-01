@@ -23,6 +23,11 @@ import eccommerceStoreFullImg from "@/public/e-store/eccommerce-store-full.png";
 import eccommerceStoreImg1 from "@/public/e-store/eccommerce1.png";
 import eccommerceStoreImg2 from "@/public/e-store/eccommerce2.png";
 
+import gweartDashboardImg from "@/public/gweart/gweart_dashboard.png";
+import gweartEventsImg from "@/public/gweart/gweart_dashboard.png";
+import gweartProductImg from "@/public/gweart/gweart_dashboard.png";
+import gweartCheckoutImg from "@/public/gweart/gweart_dashboard.png";
+
 export const links = [
   {
     name: "Home",
@@ -144,6 +149,19 @@ export const projectsData = [
     githubUrl: "https://github.com/jdimacali/e-commerce-admin",
     photos: [eccommerceStoreFullImg, eccommerceStoreImg1, eccommerceStoreImg2],
   },
+  {
+    title: "GWE ART",
+    descriptions: [
+      "Personal website for art influencer with strapi dashboard for managing events, products, orders.",
+      "Using strapi to handle data management and api endpoints, G.W.E manages their upcoming events to let users know where their next appearance will be.",
+      `The product management feature within the G.W.E Art platform is meticulously designed to provide administrators with a hassle-free and secure data management experience.`,
+    ],
+    tags: ["React", "Next.js", "Tailwind", "Strapi", "Stripe", "S3"],
+    imageUrl: gweartDashboardImg,
+    projectUrl: "https://www.artbygwe.com/",
+    githubUrl: "https://github.com/jdimacali/gweart",
+    photos: [gweartEventsImg, gweartProductImg, gweartCheckoutImg],
+  },
 ] as const;
 
 export const skillsData = [
@@ -164,9 +182,13 @@ export const skillsData = [
   "GraphQL",
   "Prisma",
   "MongoDB",
+  "Mongoose",
   "PostgreSQL",
   "Python",
+  "Rust",
   "Flask",
   "Git",
   "Docker",
+  "Framer Motion",
+  "Jest",
 ] as const;
