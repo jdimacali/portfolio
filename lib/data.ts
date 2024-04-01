@@ -26,7 +26,7 @@ import eccommerceStoreImg2 from "@/public/e-store/eccommerce2.png";
 import gweartDashboardImg from "@/public/gweart/gweart_dashboard.png";
 import gweartEventsImg from "@/public/gweart/gweart_events.png";
 import gweartProductImg from "@/public/gweart/gwe_product.png";
-import gweartCheckoutImg from "@/public/gweart/gwe_checkout.png";
+import gweartDashboardImg2 from "@/public/gweart/gweart_dashboard2.png";
 
 export const links = [
   {
@@ -160,7 +160,7 @@ export const projectsData = [
     imageUrl: gweartDashboardImg,
     projectUrl: "https://www.artbygwe.com/",
     githubUrl: "https://github.com/jdimacali/gweart",
-    photos: [gweartDashboardImg, gweartEventsImg, gweartProductImg],
+    photos: [gweartDashboardImg2, gweartEventsImg, gweartProductImg],
   },
 ] as const;
 
@@ -179,6 +179,7 @@ export const skillsData = [
   "Node.js",
   "Express",
   "REST API",
+  "Webhooks",
   "GraphQL",
   "Prisma",
   "MongoDB",
