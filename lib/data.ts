@@ -24,9 +24,9 @@ import eccommerceStoreImg1 from "@/public/e-store/eccommerce1.png";
 import eccommerceStoreImg2 from "@/public/e-store/eccommerce2.png";
 
 import gweartDashboardImg from "@/public/gweart/gweart_dashboard.png";
-import gweartEventsImg from "@/public/gweart/gweart_dashboard.png";
-import gweartProductImg from "@/public/gweart/gweart_dashboard.png";
-import gweartCheckoutImg from "@/public/gweart/gweart_dashboard.png";
+import gweartEventsImg from "@/public/gweart/gweart_events.png";
+import gweartProductImg from "@/public/gweart/gwe_product.png";
+import gweartCheckoutImg from "@/public/gweart/gwe_checkout.png";
 
 export const links = [
   {
