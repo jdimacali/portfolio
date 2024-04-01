@@ -156,7 +156,7 @@ export const projectsData = [
       "Using strapi to handle data management and api endpoints, G.W.E manages their upcoming events to let users know where their next appearance will be. The frontend connects to the backend and updates data in real time.",
       "The product management feature within the G.W.E Art platform is meticulously designed to provide administrators with a hassle-free and secure data management experience.",
     ],
-    tags: ["React", "Next.js", "Tailwind", "Strapi", "Stripe", "S3"],
+    tags: ["Next.js", "Tailwind", "Strapi", "Stripe", "S3", "EasyPost"],
     imageUrl: gweartDashboardImg,
     projectUrl: "https://www.artbygwe.com/",
     githubUrl: "https://github.com/jdimacali/gweart",
