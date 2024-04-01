@@ -46,7 +46,7 @@ const ProjectPage = () => {
         animate={{ opacity: 100, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1.05 }}
       >
-        <h2 className="text-4xl italic font-bold capitalize mb-4 text-center">
+        <h2 className="text-3xl italic font-bold capitalize mb-4 text-center">
           {project.title}
         </h2>
         <div className="w-[350px] border bg-white opacity-20 h-1 mb-12 rounded-3xl" />
