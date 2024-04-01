@@ -150,9 +150,9 @@ export const projectsData = [
     photos: [eccommerceStoreFullImg, eccommerceStoreImg1, eccommerceStoreImg2],
   },
   {
-    title: "GWE ART",
+    title: "G.W.E ART",
     descriptions: [
-      "Personal website for the art influencer G.W.E with strapi dashboard for managing upcoming events, personalized products, and fulfilling orders.",
+      "Personalized website for art influencer G.W.E, using Strapi for management of upcoming events, custom products, and order fulfillment.",
       "Using strapi to handle data management and api endpoints, G.W.E manages their upcoming events to let users know where their next appearance will be. The frontend connects to the backend and updates data in real time.",
       "The product management feature within the G.W.E Art platform is meticulously designed to provide administrators with a hassle-free and secure data management experience.",
     ],

@@ -9,7 +9,7 @@ interface SecondKeyFeatureProps {
 const SecondKeyFeature = ({ project }: SecondKeyFeatureProps) => {
   return (
     <motion.article
-      className="mx-24 sm:flex flex-col items-center justify-center"
+      className="mx-8 sm:flex flex-col items-center justify-center mt-8"
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 100 }}
       transition={{
@@ -24,7 +24,8 @@ const SecondKeyFeature = ({ project }: SecondKeyFeatureProps) => {
       <Image
         alt="Project image"
         src={project.photos[2]}
-        width={900}
+        width={800}
+        height={800}
         className="rounded-lg shadow-2xl object-cover"
       />
       <div className="max-w-[800px]">

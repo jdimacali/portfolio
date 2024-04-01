@@ -89,23 +89,24 @@ const Intro = () => {
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition " />
         </a>
-        {/* TODO: add links to my own github and linked in, these will not work if i dont put my link specifically  */}
-        <a
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
+        <div className="flex gap-x-2">
+          <a
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white"
-          href="https://www.linkedin.com/in/james-dimacali"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="bg-white text-gray-700 text-[1.25rem] p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
+            href="https://www.linkedin.com/in/james-dimacali"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-white text-gray-700 text-[1.25rem] p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
           hover:bg-white-100 active:scale:105 transition-all borderBlack shadow dark:bg-white/20 dark:text-white"
-          href="https://github.com/jdimacali"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+            href="https://github.com/jdimacali"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

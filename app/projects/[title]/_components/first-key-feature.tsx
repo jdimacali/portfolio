@@ -9,7 +9,7 @@ interface FirstKeyFeatureProps {
 const FirstKeyFeature = ({ project }: FirstKeyFeatureProps) => {
   return (
     <motion.article
-      className="mx-24 sm:flex items-center justify-center mt-[-3rem]"
+      className="mx-8 lg:flex items-center justify-center mt-[-3rem]"
       initial={{ x: 100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 100 }}
       transition={{
@@ -24,11 +24,12 @@ const FirstKeyFeature = ({ project }: FirstKeyFeatureProps) => {
       <Image
         alt="Project image"
         src={project.photos[1]}
-        width={900}
+        width={800}
+        height={800}
         className="rounded-lg shadow-2xl object-cover"
       />
-      <div className="max-w-[400px]">
-        <p className="mt-6 sm:ml-10 text-gray-700 dark:text-gray-300 text-center font-semibold">
+      <div className="w-full lg:w-96 md:pl-12">
+        <p className="mt-6 text-gray-700 dark:text-gray-300 text-center font-semibold">
           {project.descriptions[1]}
         </p>
       </div>

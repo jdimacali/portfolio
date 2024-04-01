@@ -11,7 +11,7 @@ interface IntroProps {
 const Intro = ({ project }: IntroProps) => {
   return (
     <motion.article
-      className="mx-24 sm:flex flex-col items-center justify-center"
+      className="mx-8 sm:flex flex-col items-center justify-center"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 100 }}
       transition={{ ease: "easeOut", duration: 0.75, delay: 0.15 }}
@@ -23,11 +23,12 @@ const Intro = ({ project }: IntroProps) => {
       <Image
         alt="Project image"
         src={project.photos[0]}
-        width={900}
+        width={800}
+        height={800}
         className="rounded-lg shadow-2xl object-cover"
       />
-      <div>
-        <p className="mt-8 text-gray-700 dark:text-gray-300 text-center font-semibold">
+      <div className="flex justify-center">
+        <p className="mt-10 text-gray-700 dark:text-gray-300 text-center font-semibold lg:w-[69%]">
           {project.descriptions[0]}
         </p>
       </div>

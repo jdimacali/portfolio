@@ -46,10 +46,10 @@ const ProjectPage = () => {
         animate={{ opacity: 100, y: 0 }}
         transition={{ ease: "easeInOut", duration: 1.05 }}
       >
-        <h2 className="text-3xl font-medium capitalize mb-8 text-center">
+        <h2 className="text-4xl italic font-bold capitalize mb-4 text-center">
           {project.title}
         </h2>
-        <div className="w-[300px] border bg-white opacity-20 h-1 mb-10 rounded-3xl" />
+        <div className="w-[350px] border bg-white opacity-20 h-1 mb-12 rounded-3xl" />
       </motion.div>
 
       <div className="flex flex-col items-center gap-y-14">
@@ -57,17 +57,16 @@ const ProjectPage = () => {
         <Buttons project={project} />
 
         <div className="flex flex-col items-center">
+          <SectionHeading> Technology Used </SectionHeading>
+        </div>
+        <TechUsed project={project} />
+
+        <div className="flex flex-col items-center">
           <SectionHeading> Key Features </SectionHeading>
         </div>
 
         <FirstKeyFeature project={project} />
         <SecondKeyFeature project={project} />
-
-        <div className="flex flex-col items-center">
-          <SectionHeading> Technology Used </SectionHeading>
-        </div>
-
-        <TechUsed project={project} />
       </div>
     </>
   );
