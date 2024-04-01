@@ -160,7 +160,7 @@ export const projectsData = [
     imageUrl: gweartDashboardImg,
     projectUrl: "https://www.artbygwe.com/",
     githubUrl: "https://github.com/jdimacali/gweart",
-    photos: [gweartEventsImg, gweartProductImg, gweartCheckoutImg],
+    photos: [gweartDashboardImg, gweartEventsImg, gweartProductImg],
   },
 ] as const;
 
